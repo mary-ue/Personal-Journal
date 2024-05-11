@@ -44,31 +44,19 @@ const JournalForm = ({ onSubmit }) => {
   return (
     <form className="journal-form" onSubmit={addJournalItem}>
       <input
+        className={`input ${formValidState.title ? '' : 'invalid'}`}
         type="text"
         name="title"
-        style={{
-          border: formValidState.title
-            ? '1px solid transparent'
-            : '1px solid red'
-        }}
       />
       <input
+        className={`input ${formValidState.date ? '' : 'invalid'}`}
         type="date"
         name="date"
-        style={{
-          border: formValidState.date
-            ? '1px solid transparent'
-            : '1px solid red'
-        }}
       />
       <input type="text" name="tag" />
       <textarea
+        className={`input ${formValidState.post ? '' : 'invalid'}`}
         name="text"
-        style={{
-          border: formValidState.post
-            ? '1px solid transparent'
-            : '1px solid red'
-        }}
       />
       <Button
         text="Сохранить"

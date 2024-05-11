@@ -3,3 +3,12 @@
   flex-direction: column;
   gap: 30px;
 }
+
+.input {
+  border: 1px solid transparent;
+}
+
+.invalid {
+  border: 1px solid red;
+  background-color: rgb(139, 36, 36);
+}
