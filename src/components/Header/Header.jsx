@@ -1,8 +1,8 @@
-import './Header.css';
+import s from './Header.module.css';
 
 const Header = () => {
   return (
-    <img className='logo' src="/logo.svg" alt="Логотип Personal Journal" />
+    <img className={s.logo} src="/logo.svg" alt="Логотип Personal Journal" />
   );
 };
 
