@@ -19,7 +19,7 @@ const JournalList = ({ items }) => {
     <>
       {items.sort(sortItems).map((el) => (
         <CardButton key={el.id}>
-          <JournalItem title={el.title} text={el.text} date={el.date} />
+          <JournalItem title={el.post} text={el.text} date={el.date} />
         </CardButton>
       ))}
     </>
