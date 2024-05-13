@@ -1,10 +1,18 @@
 import SelectUser from '../SelectUser/SelectUser';
-import s from './Header.module.css';
+import Logo from '../Logo/Logo';
+
+const logos = ['/logo.svg', '/vite.svg'];
 
 const Header = () => {
+  // const [logoIndex, setLogoIndex] = useState(0);
+
+  // const toggleLogo = () => {
+  //   setLogoIndex(state => Number(!state));
+  // };
+
   return (
     <>
-      <img className={s.logo} src="/logo.svg" alt="Логотип Personal Journal" />
+      <Logo image={logos[0]} />
       <SelectUser  />
     </>
   );
